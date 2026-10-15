@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#020604">
+  <title>SHAN TOPUP STORE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="#" class="logo">SHAN <span>TOPUP</span></a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#games">Games</a>
+    <a href="#order">Order</a>
+    <a href="#payment">Payment</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tag">⚡ FAST • SAFE • GAMING ⚡</p>
+    <h1>SHAN <span>TOPUP</span></h1>
+    <h2>YOUR GAME. YOUR RULES.</h2>
+    <p>Power up your favourite games!</p>
+    <a href="#games" class="btn">EXPLORE GAMES →</a>
+  </div>
+</section>
+
+<section class="section" id="games">
+  <h2>CHOOSE YOUR <span>GAME</span></h2>
+
+  <div class="games">
+    <div class="game-card">
+      <div class="game-icon">🔥</div>
+      <h3>Free Fire</h3>
+      <p>Diamonds Top Up</p>
+      <a class="btn" href="#order">SELECT</a>
+    </div>
+
+    <div class="game-card">
+      <div class="game-icon">🎮</div>
+      <h3>PUBG Mobile</h3>
+      <p>UC Top Up</p>
+      <a class="btn" href="#order">SELECT</a>
+    </div>
+
+    <div class="game-card">
+      <div class="game-icon">⚡</div>
+      <h3>Other Games</h3>
+      <p>Contact for packages</p>
+      <a class="btn" href="#order">SELECT</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="order">
+  <h2>PLACE YOUR <span>ORDER</span></h2>
+
+  <form id="orderForm">
+    <label for="game">Game</label>
+    <select id="game" required>
+      <option value="">Select game</option>
+      <option>Free Fire</option>
+      <option>PUBG Mobile</option>
+      <option>Other</option>
+    </select>
+
+    <label for="playerId">Player ID</label>
+    <input id="playerId" placeholder="Enter Player ID" required>
+
+    <label for="package">Package</label>
+    <input id="package" placeholder="Enter package" required>
+
+    <label for="amount">Amount (LKR)</label>
+    <input id="amount" type="number" min="1"
+      placeholder="Amount in rupees" required>
+
+    <button class="btn" type="submit">CONTINUE →</button>
+    <p id="orderMessage" role="status"></p>
+  </form>
+</section>
+
+<section class="section" id="payment">
+  <h2>BANK <span>PAYMENT</span></h2>
+  <div class="payment-card">
+    <h3>Bank Transfer</h3>
+    <p>Bank: Add your bank name</p>
+    <p>Account Name: Add account holder name</p>
+    <p>Account Number: Add verified account number</p>
+    <p class="warning">
+      Verify the bank details before sending money.
+      Top-ups are processed only after payment is confirmed.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 SHAN TOPUP STORE</p>
+  <p>PLAY MORE • PAY LESS ⚡</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+  </html>
